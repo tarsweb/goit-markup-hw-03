@@ -188,6 +188,8 @@ img{
 .primary {
   margin-top: 0px;
   margin-bottom: 0px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
   text-align: center;
 
