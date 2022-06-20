@@ -185,12 +185,11 @@ img{
   background-color: var(--background-dark-color);
 }
 
-.primary {
-  display: block;  
+.primary {  
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  pading-top: 200px;
+  pading-bottom: 200px;
 
   text-align: center;
 
