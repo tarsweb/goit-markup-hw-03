@@ -186,6 +186,7 @@ img{
 }
 
 .primary {
+  display: block;  
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 200px;
