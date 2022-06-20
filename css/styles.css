@@ -335,15 +335,14 @@ img{
 }
 
 .work-description {
+  padding: 20px 24px;
   border: 1px solid #EEEEEE;
 }
 
 .title-work {
   margin-top: 0;
-  margin-bottom: 4px; 
+  margin-bottom: 4px;   
   
-  padding-top: 20px;
-  padding-left: 24px;
   /* padding-bottom: 0; */
 
   text-align: left;
@@ -355,8 +354,7 @@ img{
 
 .type-work {
   margin-top: 0;
-  margin-bottom: 20px;
-  padding-left: 24px;
+  margin-bottom: 0;
 
   font-size: 16px;
   line-height: 1.88; /* 30/16; */
