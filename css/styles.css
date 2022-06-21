@@ -14,6 +14,9 @@
   --main-light-color: #ffffff;
   /* rgb(255,255,255) */
   --main-light-alfa-color: rgba(255, 255, 255, 0.6);
+
+  /* for grid  */
+  --margin-set-gap: 30px;
 }
 
 body {
@@ -71,8 +74,8 @@ img{
   padding-top: 94px;
   padding-bottom: 94px;
   
-  background-color: greenyellow;
-  outline: 3px solid green;
+  /* background-color: greenyellow;
+  outline: 3px solid green; */
 }
 
 /* .section .list {
@@ -103,7 +106,7 @@ img{
   padding-left: 15px;
   width: 1200px; 
 
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 .container .list {
@@ -113,7 +116,8 @@ img{
 
 /* Header */
 .header{
-  border-bottom: 1px solid #ECECEC;
+  --color-header-border : #ECECEC
+  border-bottom: 1px solid var(--color-header-border);
 }
 
 .header .container {
@@ -132,8 +136,6 @@ img{
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 95px;
-  /* margin-top: 10px;
-  margin-bottom: 10px; */
   padding-left: 0;
 }
 
@@ -173,6 +175,11 @@ img{
   color: var(--accent-dark-color);
 }
 
+.navigation .logo{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .list.contact {
   display: flex;
   margin-top: 0px;
@@ -192,8 +199,6 @@ img{
   padding-bottom: 200px;
 
   text-align: center;
-
-  outline: 1px solid tomato;
 }
 
 .main-title {
@@ -266,25 +271,31 @@ img{
   background-color: var(--background-light-color);
 }
 
-.list.our-team{
+.list.our-team {
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
 }
 
-.our-team-collections-items{
-  box-shadow : 0px 1px 3px rgba(0, 0, 0, 0.12),
+.our-team-item{
+  /* box-shadow : 0px 1px 3px rgba(0, 0, 0, 0.12),
                0px 1px 1px rgba(0, 0, 0, 0.14),
-               0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+               0px 2px 1px rgba(0, 0, 0, 0.2); 
+  border-radius: 0px 0px 4px 4px; */
 }
 
-.our-team-collections-items + .our-team-collections-items {
+.our-team-item + .our-team-item{
   margin-left: 30px;
+}
+
+.our-team-description{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .our-team-title {
   margin-top: 0;  
   margin-bottom: 10px;
-  padding-top: 30px;  
   text-align: center;
 
   font-weight: 500;
@@ -294,7 +305,7 @@ img{
 
 .our-team-position {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   text-align: center;
 
   font-size: 16px;
@@ -331,20 +342,81 @@ img{
 }
 
 .list.works {
+  margin: 0;
+  padding-left: 0;
+  flex-wrap: wrap;
+
+  margin-top: calc(-1* var(--margin-set-gap));
+  margin-left: calc(-1* var(--margin-set-gap));
+}
+
+.list.works .work-item{
+  margin-top: var(--margin-set-gap);
+  margin-left: var(--margin-set-gap);
+  flex-basis: calc(100% / 4 - var(--margin-set-gap));
+}  
+
+/* v2 */
+/* .list.works {
+  margin: 0;
+  padding-left: 0;
+  flex-wrap: wrap;
+}
+.list.works .work-item:not(:nth-child(3n)) {
+  margin-right: var(--margin-set-gap);
+  margin-bottom: var(--margin-set-gap);
+}
+
+.list.works .work-item:nth-child(3n) {
+  margin-bottom: var(--margin-set-gap);
+}
+
+.list.works .work-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+} */
+
+/* v3 */
+/* .list.works {
+  margin: 0;
+  padding: 0;
   flex-wrap: wrap;
 }
 
+.list.works .work-item {
+  margin: 0;
+  padding: 0;
+  --count-inline:3;
+  width: calc((100% - (var(--count-inline) - 1) * var(--margin-set-grap))/3);
+  margin-right: var(--margin-set-gap);
+  margin-bottom: var(--margin-set-gap); 
+}
+
+.list.works .work-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.list.works .work-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+} */
+
+/* v4 */
+/* .list.works {
+  margin: 0;
+  padding-left: 0;
+  flex-wrap: wrap;
+  gap: var(--margin-set-gap);
+} */
+
 .work-description {
+  --border-color: #EEEEEE;
   padding: 20px 24px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid var(--border-color);
 }
 
 .title-work {
   margin-top: 0;
   margin-bottom: 4px;   
   
-  /* padding-bottom: 0; */
-
   text-align: left;
 
   font-size: 18px;
@@ -365,9 +437,14 @@ img{
 .footer {
   background-color: var(--background-dark-color);
 }
+
+.footer .container{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer .logo {
   display: block;
-  padding-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -380,8 +457,6 @@ img{
 }
 
 .item-footer {
-  /* margin-bottom: 9px; */
-
   font-size: 14px;
   font-style: normal;
   line-height: 1.714; /* 24/14 */
