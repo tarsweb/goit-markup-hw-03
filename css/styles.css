@@ -315,7 +315,7 @@ img{
 
 /* filter */
 .button-filter {
-  display: block;
+  /* display: block; */
   padding: 6px 22px;
 
   font-weight: 500;
@@ -436,9 +436,6 @@ img{
 /* FOOTER */
 .footer {
   background-color: var(--background-dark-color);
-}
-
-.footer .container{
   padding-top: 60px;
   padding-bottom: 60px;
 }
