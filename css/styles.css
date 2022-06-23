@@ -355,7 +355,7 @@ img{
 .list.works .work-item{
   margin-top: var(--margin-set-gap);
   margin-left: var(--margin-set-gap);
-  flex-basis: calc(100% / 4 - var(--margin-set-gap));
+  flex-basis: calc(100% / 3 - var(--margin-set-gap));
 }  
 
 /* v2 */
