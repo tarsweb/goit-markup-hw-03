@@ -275,6 +275,8 @@ img{
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
+  
+  flex-basis: calc(100% / 4 - var(--margin-set-gap));
 }
 
 .our-team-item{
