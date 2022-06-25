@@ -234,7 +234,7 @@ img{
 
 .our-edge-item {
   /* flex-basis: 270px; */
-  --count-inline: 4;  
+  --count-inline: 4;
   flex-basis: calc((100% - (var(--count-inline) - 1) * var(--margin-set-gap))/var(--count-inline));
   /* flex-basis: calc(100% / 4 - var(--margin-set-gap)); */
 }
@@ -365,7 +365,7 @@ img{
   margin-left: var(--margin-set-gap);
   
   --count-inline: 3;  
-  flex-basis: calc((100% - (var(--count-inline) - 1) * var(--margin-set-gap))/var(--count-inline));
+  flex-basis: calc(100% / var(--count-inline) - var(--margin-set-gap));
   /* flex-basis: calc(100% / 3 - var(--margin-set-gap)); */
 }  
 
