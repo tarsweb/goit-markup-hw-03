@@ -356,8 +356,8 @@ img{
   padding-left: 0;
   flex-wrap: wrap;
 
-  margin-top: calc(-1* var(--margin-set-gap));
-  margin-left: calc(-1* var(--margin-set-gap));
+  margin-top: calc(-1 * var(--margin-set-gap));
+  margin-left: calc(-1 * var(--margin-set-gap));
 }
 
 .list.works .work-item {
