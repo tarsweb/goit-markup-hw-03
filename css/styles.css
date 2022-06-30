@@ -85,7 +85,7 @@ img{
   padding-bottom: 0;
 } */
 
-/* Семантическое скрытие документов */
+/* Семантическое скрытие элементов */
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
