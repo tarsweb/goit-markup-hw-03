@@ -25,6 +25,7 @@ body {
   font-weight: 400;
   font-size: 14px;  
   letter-spacing: 0.03em;
+  
   color: var(--primary-dark-color);
   background-color: var(--main-light-color);
 }
@@ -60,11 +61,10 @@ img{
   margin-top: 0;
   margin-bottom: 50px;
 
-  text-align: center;
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167; /* 42/36; */
+  text-align: center;
 }
 
 .current {
@@ -169,6 +169,7 @@ img{
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192; /* 31/26; */
+  
   color: var(--accent-light-color);
 }
 
@@ -306,20 +307,21 @@ img{
 .our-team-title {
   margin-top: 0;  
   margin-bottom: 10px;
-  text-align: center;
-
+  
   font-weight: 500;
   font-size: 16px;
   line-height: 1.187; /* 19/16 */
+  text-align: center;
 }
 
 .our-team-position {
   margin-top: 0;
   margin-bottom: 0;
-  text-align: center;
-
+  
   font-size: 16px;
   line-height: 1.187; /* 19/16 */
+  text-align: center;
+  
   color: var(--primary-light-color);
 }
 
@@ -331,15 +333,16 @@ img{
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625; /* 26/16 */
+  
   color: inherit;
   background-color: var(--background-light-color);
 }
 
 .list.filter {
+  justify-content: center;
   margin-top: 0;
   margin-bottom: 34px;
-  padding-left: 0;
-  justify-content: center;
+  padding-left: 0;  
 }
 
 .item-filter + .item-filter {
@@ -353,9 +356,9 @@ img{
 }
 
 .list.works {
-  margin: 0;
-  padding-left: 0;
   flex-wrap: wrap;
+  margin: 0;
+  padding-left: 0;  
 
   margin-top: calc(-1 * var(--margin-set-gap));
   margin-left: calc(-1 * var(--margin-set-gap));
@@ -422,8 +425,9 @@ img{
 } */
 
 .work-description {
-  --border-color: #EEEEEE;
   padding: 20px 24px;
+  
+  --border-color: #EEEEEE;  
   border: 1px solid var(--border-color);
 }
 
@@ -431,11 +435,10 @@ img{
   margin-top: 0;
   margin-bottom: 4px;   
   
-  text-align: left;
-
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  text-align: left;
 }
 
 .type-work {
@@ -448,10 +451,11 @@ img{
 }
 
 /* FOOTER */
-.footer {
-  background-color: var(--background-dark-color);
+.footer {  
   padding-top: 60px;
   padding-bottom: 60px;
+  
+  background-color: var(--background-dark-color);
 }
 
 .footer .logo {
@@ -471,6 +475,7 @@ img{
   font-size: 14px;
   font-style: normal;
   line-height: 1.714; /* 24/14 */
+  
   color: var(--main-light-color);
 }
 
