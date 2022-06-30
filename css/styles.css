@@ -1,18 +1,11 @@
 :root {
-  --background-dark-color: #2f303a;
-  /* rgb(47, 48, 58) */
-  --background-light-color: #f5f4fa;
-  /* rgb(245, 244, 250); */
-  --primary-dark-color: #212121;
-  /* rgb(33, 33, 33)*/
-  --primary-light-color: #757575;
-  /*rgb(117, 117, 117)*/
-  --accent-light-color: #2196f3;
-  /* rgb(33, 150, 243) */
-  --accent-dark-color: #000000;
-  /* rgb(0,0,0) */
-  --main-light-color: #ffffff;
-  /* rgb(255,255,255) */
+  --background-dark-color: #2f303a; /* rgb(47, 48, 58) */
+  --background-light-color: #f5f4fa; /* rgb(245, 244, 250); */
+  --primary-dark-color: #212121; /* rgb(33, 33, 33)*/
+  --primary-light-color: #757575; /*rgb(117, 117, 117)*/
+  --accent-light-color: #2196f3; /* rgb(33, 150, 243) */
+  --accent-dark-color: #000000; /* rgb(0,0,0) */
+  --main-light-color: #ffffff; /* rgb(255,255,255) */
   --main-light-alfa-color: rgba(255, 255, 255, 0.6);
 
   /* for grid  */
@@ -206,14 +199,14 @@ img{
 .main-title {
   margin-top: 0;
   margin-bottom: 30px;
-
-  color: var(--main-light-color);
-
+  
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364; /* 60/44; */
   letter-spacing: 0.06em;
-  text-transform: uppercase;  
+  text-transform: uppercase; 
+  
+  color: var(--main-light-color); 
 }
 
 .main-button {
@@ -259,6 +252,7 @@ img{
   margin-bottom: 0;
 
   line-height: 1.714; /* 24/14 */
+  
   color: var(--primary-light-color);
 }
 
@@ -447,6 +441,7 @@ img{
 
   font-size: 16px;
   line-height: 1.88; /* 30/16; */
+  
   color: var(--primary-light-color);
 }
 
