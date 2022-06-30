@@ -36,8 +36,7 @@ img{
 }
 
 /* Common Styles */
-.link {
-  line-height: 1.143; /* 16/14 */
+.link {  
   text-decoration: none;
   
   color: inherit;
@@ -142,6 +141,7 @@ img{
 
 .item-header {
   font-weight: 500;
+  line-height: 1.143; /* 16/14 */
   letter-spacing: 0.02em;
 }
 
