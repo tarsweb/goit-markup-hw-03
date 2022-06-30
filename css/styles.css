@@ -419,9 +419,10 @@ img{
 } */
 
 .work-description {
-  padding: 20px 24px;
+  --border-color: #EEEEEE;
   
-  --border-color: #EEEEEE;  
+  padding: 20px 24px;  
+    
   border: 1px solid var(--border-color);
 }
 
@@ -467,8 +468,8 @@ img{
 }
 
 .item-footer {
-  font-size: 14px;
   font-style: normal;
+  font-size: 14px;  
   line-height: 1.714; /* 24/14 */
   
   color: var(--main-light-color);
