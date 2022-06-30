@@ -47,13 +47,13 @@ img{
 }
 
 .button {
+  color: var(--main-light-color);
+  background-color: var(--accent-light-color);
+  
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
-  border-color: transparent;
-
-  color: var(--main-light-color);
-  background-color: var(--accent-light-color);
+  border-color: transparent;  
 }
 
 .title {
