@@ -332,6 +332,11 @@ img{
   background-color: var(--background-light-color);
 }
 
+.current-button {
+  color: var(--main-light-color);
+  background-color: var(--accent-light-color);
+}
+
 .list.filter {
   justify-content: center;
   margin-top: 0;
